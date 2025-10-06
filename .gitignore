@@ -1,0 +1,12 @@
+*.jpg
+*.pkl
+*.zip
+*.csv
+*.json
+*.parquet
+*.jsonl
+*.pth
+*.png
+*.txt
+.env
+.bat
