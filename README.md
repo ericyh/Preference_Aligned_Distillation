@@ -13,12 +13,41 @@ PAD distills the nuanced preference rankings from a powerful vision–language m
 
 Experiments show PAD significantly outperforms traditional embedding-based baselines in persona-driven product recommendation tasks.
 
+<p align="center"><img src="images/histogram_h&m_nemotron_val.gif" width="60%"></p>
+
+---
+
 ## Key Features
 
 - Distills preferences from vLLMs into embeddings for efficient retrieval  
 - Supports personalized and abstract text–image queries  
 - Maintains scalability for large datasets  
 - Demonstrated performance improvements on product recommendation tasks  
+
+---
+
+## Performance / Results
+
+<p align="center"><img src="images/performance.png" width="60%"></p>
+
+---
+
+## Model Architecture / Scalable Inference
+
+PAD combines the rich preference alignment of vLLMs with the efficiency of embedding-based retrieval.
+
+<p align="center"><img src="images/inference.png" width="50%"></p>
+
+---
+
+## Cyclical Training Process
+
+PAD uses cyclical training to distill preference rankings effectively from vLLMs to embeddings. When distilling from the vLLM, it is useful to select a range of different images with some being good match and some being bad matches (random sample leads to mostly bad matches and nothing useful to learn), so at each stage, we sample new data with the present best model for the next training step.
+
+
+<p align="center"><img src="images/training.png" width="80%"></p>
+
+---
 
 ## Installation
 

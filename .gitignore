@@ -10,3 +10,5 @@
 *.txt
 .env
 .bat
+
+!images/
