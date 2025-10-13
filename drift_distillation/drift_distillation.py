@@ -1,6 +1,6 @@
 device = "cuda"
 image_set = "utzap"
-text_set = "opencharacter"
+text_set = "nemotron"
 embedding_mode = "clip"
 
 # image_set = os.getenv("IMAGE_SET", "farfetch")
