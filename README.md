@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Preference Aligned Distillation (PAD)** is a framework for efficient, personalized text–image retrieval. Traditional embedding-based approaches like CLIP enable large-scale retrieval via vector similarity search but often struggle to capture abstract or persona-driven attributes (e.g., *“a gift for a mother who loves gardening”*).  
+**Preference Aligned Distillation (PAD)** is a framework for efficient, personalized text–image retrieval. Traditional embedding-based approaches like CLIP enable large-scale retrieval via vector similarity search but often struggle to capture abstract or persona-driven attributes (e.g., *"a gift for a mother who loves gardening"*).  
 
 PAD distills the nuanced preference rankings from a powerful vision–language model (vLLM) into a scalable embedding-based system, combining the strengths of both approaches:  
 
@@ -12,6 +12,8 @@ PAD distills the nuanced preference rankings from a powerful vision–language m
 - **Scalable inference:** Maintains efficiency for large catalog retrieval.  
 
 Experiments show PAD significantly outperforms traditional embedding-based baselines in persona-driven product recommendation tasks.
+
+**Preprint:** [https://arxiv.org/abs/2510.12014](https://arxiv.org/abs/2510.12014)
 
 <p align="center"><img src="images/histogram_h&m_nemotron_val.gif" width="60%"></p>
 
@@ -58,3 +60,22 @@ cd Preference_Aligned_Distillation
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+---
+
+## Citation
+
+If you use this work in your research, please cite:
+
+```bibtex
+@misc{he2025embeddingteacherdistillingvllm,
+      title={Embedding the Teacher: Distilling vLLM Preferences for Scalable Image Retrieval}, 
+      author={Eric He and Akash Gupta and Adian Liusie and Vatsal Raina and Piotr Molenda and Shirom Chabra and Vyas Raina},
+      year={2025},
+      eprint={2510.12014},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2510.12014}, 
+}
+```
